@@ -73,14 +73,14 @@ const serviceData2 = [
     },
     {
         id: 1,
-        name: 'Developmemt',
-        img: '/images/courses-item1.png',
+        name: 'Design',
+        img: '/images/courses-item6.png',
         // link: '/development',
     },
     {
         id: 1,
-        name: 'Developmemt',
-        img: '/images/courses-item1.png',
+        name: 'Personal Development',
+        img: '/images/courses-item7.png',
         // link: '/development',
     },
     {

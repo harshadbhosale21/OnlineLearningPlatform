@@ -1,18 +1,24 @@
 
-import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React, { useRef } from "react";
+import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 import { serviceData1, serviceData2, serviceData3 } from './Data/serviceData.js';
 import { teamInfo, teamPost } from "./Data/teamData.js";
 import { contactInfo } from "./Data/contactData.js";
 import { aboutSec3, callAction, aboutSec1 } from "./Data/aboutData.js";
 
 const Home = () => {
+    var Navigate = useNavigate();
     var loc = useLocation();
     if (loc.pathname === '/') {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         })
+    }
+
+    const handleNav = () => {
+        Navigate('/services#Pricing');
+
     }
 
     return (
@@ -26,7 +32,7 @@ const Home = () => {
                                 <p className="text-white text-center text-lg-start">Ignite Your Passion for Learning , Ignite Your Future</p>
                             </div>
                             <div className="col-lg-5 text-center text-lg-start sec1-head2">
-                                <button className="btn btn-danger p-2 my-2  fw-bold">Create New Account</button>
+                                <button class="btn btn-danger p-2 my-2  fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#createAccount">Create New Account</button>
                                 <button className="btn btn-outline-light p-2 mx-3 fw-bold">Buy a Plan</button>
                             </div>
                         </div>
@@ -129,7 +135,6 @@ const About = () => {
 }
 
 const Services = () => {
-
     var loc = useLocation();
     if (loc.pathname === '/services') {
         window.scrollTo({
@@ -201,7 +206,7 @@ const Services = () => {
                 </div>
 
                 {/* Pricing-Section  */}
-                <section className=" pricing-cont pb-5">
+                <section className=" pricing-cont pb-5" id='Pricing'>
 
                     <div className="container section-title service-sec2 text-center" id="courses">
                         <h2 className="d-inline-block">Pricing</h2>

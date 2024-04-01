@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 // import Dropdown from "react-bootstrap/Dropdown";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -40,11 +40,12 @@ const Layout = () => {
         </>
     )
 }
+
 const Navbar = ({ backgroundColor, color, boxShadow }) => {
     return (
         <>
             {/* ********************NAVBAR**************************** */}
-            <nav className="navbar navbar-expand-lg  fixed nav" style={{ backgroundColor, boxShadow }}>
+            <nav className="navbar navbar-expand-lg  fixed nav" style={{ backgroundColor, color, boxShadow }} id="nav">
                 <div className="container-fluid">
                     <NavLink to='' className="navbar-brand  nav-logo" style={{ color }}>EduConnect</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
