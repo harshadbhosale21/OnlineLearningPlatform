@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('./fonts/AmaticSC-Bold.ttf') format('tryetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat, sans-serif';
+    src: url('./fonts/Montserrat-Light.ttf') format('truetype');
+}
