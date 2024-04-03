@@ -1,13 +1,14 @@
 
-import React, { useRef } from "react";
-import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
+import React, { } from "react";
+import { NavLink, useLocation, } from "react-router-dom";
 import { serviceData1, serviceData2, serviceData3 } from './Data/serviceData.js';
 import { teamInfo, teamPost } from "./Data/teamData.js";
 import { contactInfo } from "./Data/contactData.js";
 import { aboutSec3, callAction, aboutSec1 } from "./Data/aboutData.js";
+import { } from "react-bootstrap/esm/PageItem.js";
+import { } from "./Layout.jsx";
 
 const Home = () => {
-    var Navigate = useNavigate();
     var loc = useLocation();
     if (loc.pathname === '/') {
         window.scrollTo({
@@ -15,15 +16,9 @@ const Home = () => {
             behavior: 'smooth'
         })
     }
-
-    const handleNav = () => {
-        Navigate('/services#Pricing');
-
-    }
-
     return (
         <>
-            <section id="section1" className="section1 section-bg">
+            <section section id="section1" className="section1 section-bg" >
                 <div className="hsla  d-flex align-items-center justify-content-center">
                     <div className="container">
                         <div className="row">
