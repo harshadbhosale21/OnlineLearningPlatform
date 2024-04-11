@@ -75,8 +75,8 @@ const Navbar = ({ backgroundColor, color, boxShadow }) => {
                 <div className="container-fluid">
                     <NavLink to='' className="navbar-brand  nav-logo" style={{ color }}>EduConnect</NavLink>
 
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon order-1 order-2"></span>
+                    <button className="navbar-toggler order-2 order-lg-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon "></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
@@ -109,9 +109,9 @@ const Navbar = ({ backgroundColor, color, boxShadow }) => {
                         </ul>
 
                     </div>
-                    <div className="sign-button order-2 order-1">
-                        <button className="btn btn-success btn-sm mx-1">Login</button>
-                        <button className="btn btn-danger btn-sm mx-1">Sign up</button>
+                    <div className="sign-button order-1 order-lg-2">
+                        <button className="btn btn-success btn-sm mx-1"><NavLink to='/loginpage' className=' text-light text-decoration-none'>Login</NavLink></button>
+                        <button className="btn btn-danger btn-sm mx-1"><NavLink to='/signup' className='text-light text-decoration-none'>Sign up</NavLink></button>
                     </div>
 
                 </div>

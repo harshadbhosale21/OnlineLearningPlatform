@@ -4,6 +4,8 @@ import { Layout } from './components/Layout';
 import { Home, About, Services, Team, Contact } from './components/Pages';
 import Development from "./components/Courses";
 import Admin from './components/Admin';
+import Registration from './components/Registration';
+import Login from './components/Login';
 
 const App = () => {
   return (
@@ -31,6 +33,8 @@ const AppComponent = () => {
             <Route path='/team' element={<Team />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
             <Route path='/development' element={<Development />}></Route>
+            <Route path='/signup' element={<Registration />}></Route>
+            <Route path='/loginpage' element={<Login />}></Route>
           </Route>
         </Routes>
         {/* <Footer /> */}

@@ -27,7 +27,7 @@ const Home = () => {
                                 <p className="text-white text-center text-lg-start">Ignite Your Passion for Learning , Ignite Your Future</p>
                             </div>
                             <div className="col-lg-5 text-center text-lg-start sec1-head2">
-                                <button class="btn btn-danger p-2 my-2  fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#createAccount">Create New Account</button>
+                                <button class="btn btn-danger p-2 my-2  fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#createAccount">See Courses</button>
                                 <button className="btn btn-outline-light p-2 mx-3 fw-bold">Buy a Plan</button>
                             </div>
                         </div>
